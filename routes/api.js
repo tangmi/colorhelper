@@ -1,7 +1,7 @@
 var colorhelper = require('../lib/colorhelper');
 
 exports.getColor = function(req, res) {
-	var input = req.param('input');
+	var input = req.param('input').replace('+', ' ');
 	var color = colorhelper(input);
 	var brightness = getPerceivedBrightness(color);
 
