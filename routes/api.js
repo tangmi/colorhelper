@@ -4,16 +4,18 @@ exports.getColor = function(req, res) {
 	var input = req.param('input');
 	var color = colorhelper(input);
 	var brightness = getPerceivedBrightness(color);
-	if (color != "5a8dd3") {
-		var text = textColor(brightness);
+
+	var text;
+	if (color == "5a8dd3") {
+		text = 'ffffff';
 	} else {
-		return 'ffffff';
+		text = textColor(brightness);
 	}
 
 	res.json({
 		"text": input,
 		"color": "#" + color,
-		"textcolor": "#" + textColor(brightness),
+		"textcolor": "#" + text,
 		"perceivedbrightness": brightness
 	});
 };
