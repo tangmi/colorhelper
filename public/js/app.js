@@ -14,7 +14,7 @@ $(document).ready(function() {
 
 $("form").submit(function(event) {
 	event.preventDefault();
-	var text = $("form").serialize().substring(5);
+	var text = $("#text").val();
 	if (text == "") {
 		//		location.reload();
 	} else {
@@ -43,7 +43,7 @@ function processText(text) {
 	var map = new Object();
 	disableTextBox();
 	$.ajax({
-		url: 'color/' + text,
+		url: 'color/' + encodeURIComponent(text),
 		dataType: 'json',
 		success: function(data) {
 			$.each(data, function(key, val) {
