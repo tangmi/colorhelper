@@ -1,0 +1,104 @@
+@import url(http://fonts.googleapis.com/css?family=Maven+Pro:400,900);
+* {
+	font-family: 'Maven Pro', sans-serif;
+}
+body {
+	overflow: hidden;
+	background: #FFF;
+	color: #000;
+}
+a {
+	color: inherit;
+}
+#center {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin: -100px 0 0 -250px;
+	height: 200px;
+	width: 500px;
+	text-align: center;
+}
+h1 {
+	position: relative;
+	height: 1em;
+	color: #FFF !important;
+	white-space: nowrap;
+	text-shadow:
+		1px 1px 0 #B1B1B1,
+		2px 2px 0 #AEAEAE,
+		3px 3px 0 #ACACAC,
+		4px 4px 0 #AAAAAA,
+		5px 5px 0 #A8A8A8;
+	z-index: -1;
+}
+input {
+	margin: auto;
+	width: 250px;
+	font-size: 16px;
+	padding: 10px;
+	border-radius: 3px;
+	border: none;
+	box-shadow:
+		1px 1px 0 #B1B1B1,
+		2px 2px 0 #AEAEAE,
+		3px 3px 0 #ACACAC,
+		4px 4px 0 #AAAAAA,
+		5px 5px 0 #A8A8A8;
+}
+input:focus {
+	outline: none;
+}
+#prev {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	font-size: 12px;
+	margin: 1em 1.5em;
+}
+#prev .color {
+	display: inline-block;
+	padding: 6px 14px;
+	margin-right: 20px;
+	border-radius: 5px;
+	max-width: 150px;
+	max-height: 125px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	position: relative;
+}
+#footer {
+	position: absolute;
+	bottom: 1em;
+	right: 1.5em;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	opacity: 0.75;
+}
+#overlay {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	background-image: url("../img/back.png");
+	background-size: cover;
+	background-position: center;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	z-index: -2;
+}
+#load {
+	background: url("../img/ajax.gif") no-repeat right;
+	width: 250px;
+	height: 11px;
+	margin: 0 auto -11px auto;
+	position: relative;
+	top:-25px;
+	display: none;
+}
