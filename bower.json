@@ -1,7 +1,0 @@
-{
-	"name": "colorhelper",
-	"private": true,
-	"dependencies": {
-		"jquery-color": "2.1.*"
-	}
-}

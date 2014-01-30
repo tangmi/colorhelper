@@ -1,6 +1,6 @@
 lib/rules.json
 
-public/js/vendor/*
+# public/js/vendor/*
 
 lib-cov
 *.seed
