@@ -1,7 +1,3 @@
-/**
- * Module dependencies.
- */
-
 var express = require('express');
 var api = require('./routes/api');
 var http = require('http');
